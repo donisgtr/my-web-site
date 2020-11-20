@@ -1,0 +1,59 @@
+
+/* FIRST MOBILE */
+:root {
+    --color-background:#181818; 
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, 
+body {
+    height: 100vh; /* uma boa pratica e deixar aqui o vh */
+}
+
+body {
+    background-color: rgb(21, 23, 23);
+    background-image: radial-gradient(77.05% 415.63% 
+    at 100% 0%,rgba(64, 203, 246, 0.21) 0%,
+    rgba(130, 192, 65, 0.03) 100%);   
+
+    /* display flex vai colocar todos elementos uma do lado do outro*/ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+/* * quer dizer todos os elementos do meu html que está usando esse CSS */
+
+body, 
+input,
+button, 
+textarea {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+h1 {
+    background: linear-gradient(90deg, rgb(64, 203, 246) 0%, rgb(130, 192, 65) 100%) !important; ;
+    -webkit-background-clip: text !important;;
+    -webkit-text-fill-color: transparent !important; 
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
