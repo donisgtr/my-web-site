@@ -18,10 +18,26 @@ body {
 }
 
 body {
-    background-color: rgb(21, 23, 23);
+    
+    /* background-color: rgb(21, 23, 23);
     background-image: radial-gradient(77.05% 415.63% 
     at 100% 0%,rgba(64, 203, 246, 0.21) 0%,
-    rgba(130, 192, 65, 0.03) 100%);   
+    rgba(130, 192, 65, 0.03) 100%);  */
+
+    background: linear-gradient(99.1deg, #232139 5.11%, #0D0C15 94.89%);
+    background-image: linear-gradient(99.1deg, rgb(35, 33, 57) 5.11%, rgb(13, 12, 21) 94.89%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;  
+
+    
+
 
     /* display flex vai colocar todos elementos uma do lado do outro*/ 
     display: flex; 
