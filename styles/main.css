@@ -3,6 +3,10 @@
 :root {
     --color-background:#181818; 
     font-size: 60%;
+    --primary: #FF0657;
+    --primary-light: #FF2D71;
+    --primary-dark: #AD093E;
+    --max-width: 950px;
 }
 
 * {
