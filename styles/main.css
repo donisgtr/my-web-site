@@ -80,8 +80,10 @@ span {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 footer {
     position: fixed;
@@ -102,6 +104,21 @@ footer {
     text-decoration: none !important;
 }
 
+.favicon {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+footer p a .devdonis {
+ margin-left: 5px;
+ text-decoration: none !important;
+ color: #fff;
+ font-size: 14px;
+ font-weight: 700;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
 
 .social img:first-child {
     margin-left: 5px;
@@ -119,7 +136,7 @@ footer {
     transition: opacity 1 ease-in;
     -webkit-transition: opacity 1 ease-in;
     -moz-transition: opacity 1 ease-in;
-} 
+}
 
 a:-webkit-any-link {
     color: -webkit-link;
