@@ -78,6 +78,11 @@ p {
     margin: 20px 0 20px;
 }
 
+a {
+    font-family: Manrope,sans-serif!important;
+    font-weight: 600;
+}
+
 span {
     color: #fff;
     font-size: 14px;
@@ -158,12 +163,14 @@ a:-webkit-any-link {
 
     .brand-tiitle {
         position: absolute;
-        padding: 1rem;
-        margin: 2rem;
+        height: 10vh;
+        margin-left: 2%;
         width: 50%;
         color: white;
         text-decoration: none;
         font-size: 2.0rem;
+        display: flex;
+        align-items: center;
     }
 
     nav {
@@ -180,7 +187,7 @@ a:-webkit-any-link {
         height: 100%;
         justify-content: space-around;
         align-items: center;
-        margin-left: auto;        
+        margin-left: auto;      
     }
     
 
