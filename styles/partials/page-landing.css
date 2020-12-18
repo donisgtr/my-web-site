@@ -5,6 +5,10 @@
     text-align: left;   
 }
 
+.nav-links li a:first {
+    visibility: hidden;
+  }
+
 .logo-d {
     width: 34px;
     height: 32px;
