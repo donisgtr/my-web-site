@@ -18,21 +18,19 @@
 
     <header>
         <nav class="nav">  
-            <div class="brand-tiitle">
-                <img src="imagens/favicon.png" alt="favicon"> 
-                DCODES             
-            </div>          
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="brand-title"></div>          
+            <div class="hamburger" onclick="myFunction(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div> 
-            <ul class="nav-links">
+            <ul class="nav-links" >
                 <li id="inicio" > <a href="index.html">Inicio</a> </li>
-                <li> <a href="about.html">Quem Sou</a> </li>
-                <li> <a href="contact.html">Contato</a> </li>
+                <li> <a href="projects.html">Serviços e Preços</a> </li>
                 <li> <a href="projects.html">Projetos</a> </li>
-                <li> <a href="projects.html">Preço</a> </li>
+                <li> <a href="contact.html">Contato</a> </li>
+                <li> <a href="about.html">Sobre mim</a> </li>
+                <li> <a href="about.html">Loja</a> </li>
             </ul>            
         </nav>
         <!-- <hr> -->  
@@ -42,14 +40,14 @@
         <div class="container">
             <div class="social">
                 <!-- tag target _black para abrir em uma nova guia -->
-                <a href="https://www.instagram.com/devdonis/" target="_blank">
-                    <img src="imagens/instagram.svg" alt="">
+                <a  href="https://www.instagram.com/devdonis/" target="_blank">
+                    <img class="instagram" src="imagens/instagram.svg" alt="instagram">
                 </a>
                 <a href="https://www.linkedin.com/in/donis-sousa/" target="_blank">
-                    <img src="imagens/linkedin.svg" alt="">
+                    <img src="imagens/linkedin.svg" alt="linkedin">
                 </a>
                 <a href="https://github.com/donisgtr" target="_blank">
-                    <img src="imagens/github.svg" alt="">
+                    <img src="imagens/github.svg" alt="github">
                 </a>
             </div>
             <h1>
@@ -66,13 +64,19 @@
                     CONTRATE-ME
                 </a>   
             </div>              
-        </div>  
+        </div> 
+        <div class="whatsapp">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="imagens/whatsapp.svg" alt="whatsapp">
+            </a>
+        </div> 
     </main>
     <footer>
         <span> 
             Todos os direitos reservados
         </span>
     </footer>  
+
     <script src="scrips/navbar.js"></script> 
 </body>
 </html>   

@@ -11,3 +11,7 @@ hamburger.addEventListener('click', () => {
     main.classList.toggle("visibility");
     inicio.remove();
 })
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
