@@ -53,12 +53,10 @@ body {
 
 body, 
 input,
-button, 
-textarea {
+button{
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    color: #fff;
 }
 
 .container {
@@ -73,10 +71,12 @@ h1 {
 }
 
 p {
-    background: linear-gradient(90deg, rgb(0, 140, 255) 0%, rgb(255, 255, 255) 100%) !important; ;
-    -webkit-background-clip: text !important;;
+    background: linear-gradient(90deg, rgb(50, 245, 115) 0%, rgb(94, 179, 248) 100%) !important;
+    -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important; 
+    animation: Anim 5s ease infinite;
     margin: 20px 0 20px;
+
 }
 
 .nav-links li a {
@@ -217,7 +217,7 @@ a:-webkit-any-link {
         display: flex;
         width: 100%;
         transform: scaleX(0);
-        transition: all .2s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s;
       }
 
       .nav-links li a:hover:before {

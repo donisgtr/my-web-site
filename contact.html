@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donis | Desenvolvedor</title>
-    
-    <link type="text/css" rel="stylesheet" href="styles/main.css">
-    <link type="text/css" rel="stylesheet" href="styles/partials/page-contact.css">
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" sizes="16x16">   
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/main.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="styles/partials/form.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="imagens/favicon.png"
+      type="image/x-icon"
+      sizes="16x16"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body class="page-contract">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-contract">
     <header>
         <nav class="nav">  
-            <div class="brand-tiitle">
-                <img src="imagens/favicon.png" alt="favicon"> 
-                DCODES             
-            </div>  
-           <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="brand-title"></div>          
+            <div class="hamburger" onclick="myFunction(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div> 
-            <ul class="nav-links">
-                <li> <a href="index.html">Inicio</a> </li>
-                <li> <a href="about.html">Quem Sou</a> </li>
+            <ul class="nav-links" >
+                <li id="inicio" > <a href="index.html">Inicio</a> </li>
+                <li> <a href="projects.html">Serviços</a> </li>
+                <li> <a href="projects.html">Portfólio</a> </li>
                 <li> <a href="contact.html">Contato</a> </li>
-                <li> <a href="projects.html">Projetos</a> </li>
-                <li> <a href="projects.html">Preço</a> </li>
-            </ul>
+                <li> <a href="about.html">Sobre mim</a> </li>
+                <li> <a href="about.html">Loja</a> </li>
+            </ul>            
         </nav>
-        <!-- <hr> -->  
     </header>
-    <h1>Em Construção</h1>
-    <div class="form">          
-        <form action="" method="post">
-            <input type="text" name="first_name" id="first_name" placeholder="Primeiro Nome" 
-            value required>
+    <main >
+      <form action="" method="post" id="create-form" class="form">
+        <fieldset>
+          <legend>Seus Dados</legend>
+
+          <div class="input-block">
+            <input type="text" name="first_name" id="first_name" placeholder="Primeiro Nome" value required>
+          </div>
+        
+          <div class="input-block">
             <input type="email" name="email" id="email" placeholder="Seu E-mail" value required>
-            <textarea name="input_filed" id="message" cols="35" rows="10"></textarea>
-        </form>
-        <button>ENVIAR</button>
-    </div>
+          </div>
+
+          <div class="input-block">
+            <input type="number" name="phone" id="phone" placeholder="Seu Telefone(opcional)">
+          </div>
+
+          <div class="textarea-block">
+            <textarea name="message" id="message" placeholder="Diga-me do que voce precisa?" value required></textarea>
+          </div>
+
+          <button type="submit"> Enviar! </button>
+        </fieldset>
+      </form>
+
+    </main>
+
     <footer>
-        <span> 
-            Todos os direitos reservados
-        </span>
-    </footer> 
-    <script src="scrips/navbar.js"></script>    
-</body>
-</html>   
+      <span> Todos os direitos reservados </span>
+    </footer>
+    <script src="scrips/navbar.js"></script>
+  </body>
+</html>
