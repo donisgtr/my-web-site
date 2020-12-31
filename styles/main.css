@@ -1,7 +1,14 @@
 
 /* FIRST MOBILE */
 :root {
-    --color-background:#181818; 
+    --p-color-background: linear-gradient(99.1deg, #232139 5.11%, #0D0C15 94.89%);
+    --s-color-background: linear-gradient(99.1deg, rgb(35, 33, 57) 5.11%, rgb(13, 12, 21) 94.89%);
+    --primary: #FF0657;
+    --primary-light: #FF2D71;
+    --primary-dark: #AD093E;
+    --whatsapp:#2BB140;
+    --max-width: 950px;
+
     font-size: 60%;
 }
 
@@ -18,10 +25,23 @@ body {
 }
 
 body {
-    background-color: rgb(21, 23, 23);
+    
+    /* background-color: rgb(21, 23, 23);
     background-image: radial-gradient(77.05% 415.63% 
     at 100% 0%,rgba(64, 203, 246, 0.21) 0%,
-    rgba(130, 192, 65, 0.03) 100%);   
+    rgba(130, 192, 65, 0.03) 100%);  */
+
+    background: var(--color-background);
+    background-image: var(--s-color-background);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;  
 
     /* display flex vai colocar todos elementos uma do lado do outro*/ 
     display: flex; 
@@ -33,12 +53,10 @@ body {
 
 body, 
 input,
-button, 
-textarea {
+button{
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    color: #fff;
 }
 
 .container {
@@ -52,8 +70,262 @@ h1 {
     -webkit-text-fill-color: transparent !important; 
 }
 
+p {
+    background: linear-gradient(90deg, rgb(50, 245, 115) 0%, rgb(94, 179, 248) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important; 
+    animation: Anim 5s ease infinite;
+    margin: 20px 0 20px;
+
+}
+
+.nav-links li a {
+    font-family: Manrope,sans-serif !important;
+    font-weight: 600;
+    font-size: 18px !important;
+}
+
+
+span {
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.social a {
+    text-decoration: none !important;
+}
+
+
+footer p a .devdonis {
+ margin-left: 5px;
+ text-decoration: none !important;
+ color: #fff;
+ font-size: 2.0rem;
+ font-weight: 700;
+ display: flex;
+ align-items: right;
+ justify-content: center;
+}
+
+
+.social img {
+    opacity: .6;
+    transition: opacity 0.2s ease-in;
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+    width: 30px;
+}
+
+.social img:hover  {
+    opacity: 1;
+    transition: opacity 1 ease-in;
+    -webkit-transition: opacity 1 ease-in;
+    -moz-transition: opacity 1 ease-in;
+}
+
+.whatsapp img {
+    width: 50px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    bottom: 2rem;
+    right: 2rem;
+
+} 
+
+.whatsapp img {
+    opacity: .6;
+    transition: opacity 0.2s ease-in;
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+}
+
+.whatsapp img:hover  {
+    opacity: 1;
+    transition: opacity 1 ease-in;
+    -webkit-transition: opacity 1 ease-in;
+    -moz-transition: opacity 1 ease-in;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
 @media (min-width: 700px) {
     :root {
         font-size: 62.5%;
+    }
+
+    footer {
+        margin: 60px 0 20px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .brand-title {
+        position: absolute;
+        height: 10vh;
+        margin-right: 2%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .nav-links {
+        display: flex;
+        list-style-type: none;
+        width: 50%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;      
+    }
+    
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.8rem;
+        width: 100%;
+        display: inline-block;
+        align-items: center;        
+    }
+
+    .nav-links li>a:before {
+        content: "";
+        display: flex;
+        width: 100%;
+        transform: scaleX(0);
+        transition: all .3s ease-in-out 0s;
+      }
+
+      .nav-links li a:hover:before {
+        position: relative;
+        text-align: center;
+        align-items: center;
+        height: 2px;
+        bottom: -28px;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); 
+        background-color: rgb(255, 255, 255) !important;        
+      }
+        
+}
+
+@media(max-width: 700px) {
+
+    .brand-title {
+        margin: 2rem;
+    }
+
+}
+
+
+
+@media(max-width: 1100px) {
+
+    :root {
+        font-size: 62.5%;
+    }
+
+    footer {
+        margin-bottom: 5px;
+    }
+    .brand-title {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        top: 2rem;
+        right: 2rem;
+    } 
+    
+    .line1, .line2, .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: var(--primary);
+        margin: 5px auto;
+        transition: all .3s ease-in-out;
+        font-size: 40px;
+    }  
+
+    .change .line1 {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+      }
+
+    .change .line2 {
+        opacity: 0;
+    }
+
+    .change .line3 {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    
+
+    nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .nav-links {
+        display: none;
+        justify-content: space-evenly;
+        width: 100%;
+        z-index: 9999!important;
+    }
+
+    .visibility {
+        visibility:hidden;
+    }
+    .nav-links.open {
+        display: flex;
+        background:rgb(13, 12, 21);
+        top: 0;
+        right: 0;
+        height: 100vh;
+        list-style-type: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+    }    
+
+    .nav-links li a:hover {
+        color: #FF0657;
     }
 }

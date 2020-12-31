@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donis| Desenvolvedor</title>
+    <title>Donis | Desenvolvedor</title>
     <link type="text/css" rel="stylesheet" href="styles/main.css">
     <link type="text/css" rel="stylesheet" href="styles/partials/page-landing.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" sizes="16x16">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="page-landing">
 
-    <div class="container">
-        <h1>
-            Olá,
-            </br>
-            Sou o &lt;Donis&gt;,
-            </br>
-            Estudante & Desenvolvedor WEB
-        </h1>
-        <div class="buttons-container">
-            <a class="contrate-me" href="#">
-                CONTRATE-ME
-            </a>              
-        </div>              
-    </div>
+    <header>
+        <nav class="nav">
+            <div class="brand-title"></div>
+            <div class="hamburger" onclick="myFunction(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li id="inicio"> <a href="index.html">Inicio</a> </li>
+                <li> <a href="projects.html">Serviços</a> </li>
+                <li> <a href="projects.html">Portfólio</a> </li>
+                <li> <a href="contact.html">Contato</a> </li>
+                <li> <a href="about.html">Sobre mim</a> </li>
+                <li> <a href="about.html">Loja</a> </li>
+            </ul>
+        </nav>
+        <!-- <hr> -->
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="social">
+                <!-- tag target _black para abrir em uma nova guia -->
+                <a href="https://www.instagram.com/devdonis/" target="_blank">
+                    <img class="instagram" src="imagens/instagram.svg" alt="instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/donis-sousa/" target="_blank">
+                    <img src="imagens/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://github.com/donisgtr" target="_blank">
+                    <img src="imagens/github.svg" alt="github">
+                </a>
+            </div>
+            <h1>
+                Olá,
+                </br>
+                Sou o &lt;Donis&gt;,
+                </br>
+                Estudante & Desenvolvedor
+                </br>
+            </h1>
+            <p>WEB | LOW CODE | API's</p>
+            <div class="buttons-container">
+                <a class="contrate-me" href="contact.html">
+                    CONTRATE-ME
+                </a>
+            </div>
+        </div>
+        <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=5511960688434&text=Olá, Quero conversar!" target="_blank">
+                <img src="imagens/whatsapp.svg" alt="whatsapp">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <span>
+            Todos os direitos reservados
+        </span>
+    </footer>
+
+    <script src="scrips/navbar.js"></script>
 </body>
-</html>   
+
+</html>

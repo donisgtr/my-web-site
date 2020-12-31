@@ -1,14 +1,27 @@
 .page-landing .container {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-weight: 700;
     font-family: Montserrat;
     text-align: left;   
 }
 
+#inicio {
+    visibility: hidden;
+  }
+
 .logo-d {
     width: 34px;
     height: 32px;
 }
+
+.teste {
+    display: inline-block;
+}
+
+footer img {
+    width: 2.6rem;
+}
+
 
 .buttons-container {
     margin-top: 3.0rem;
@@ -17,12 +30,12 @@
 }
 
 .buttons-container a {
-    width: 20rem;
-    height: 5.0rem;
+    width: 30rem;
+    height: 8.0rem;
     background: rgb(255, 6, 87);
     border-radius: .8rem;
     margin-left: 0;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-weight: 700;
     font-family: Montserrat;
     border: 0px;
@@ -32,12 +45,18 @@
     align-items: center;
     justify-content: center;  
     transition: all 0.2s ease-in 0s;
+    animation-duration: 4s;
 }
 
 .buttons-container a:hover {
     box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 11px;
+    background: #FF2D71;
     cursor: pointer;
+    /* background-color:red; left:0px; top:0px; */
+    /* transform: background-color: #FF2D71 translateX(-8px); */
 }
+
+
 
 @media (max-width: 699px) {
     :root {
@@ -83,6 +102,4 @@
         padding: 0;
         box-sizing: border-box;
     }
-    
-    
 }
