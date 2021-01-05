@@ -9,7 +9,6 @@ page-contract {
 }
 
 
-
 h1 {
     font-size: 1.6rem;
     text-align: center;
@@ -38,6 +37,7 @@ picture {
 .desktop {
     display: none;
 } 
+
 .social {
     display: flex;
     margin-bottom: 1rem;
@@ -49,10 +49,54 @@ picture {
 }
 
 /* Desktop */
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
 
+    * {
+        margin: 0px;
+        padding: 0px;
+        outline: 0px;
+        box-sizing: border-box;
+    }
+
+    .desktop-text {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0px auto;
+        position: relative;
+        z-index: 99;
+        padding: 32px;
+    }
+
+    picture {
+        display: block;
+        width: 370px;
+    }
+
+
+    section {
+        display: block;
+        font-size: 2.0rem;
+        padding: 10px;
+    }
 
     h1 {
+        font-size: 3.6rem;
+        text-align: left;
+        display: block;
+        margin-left: 3rem;
+        
+    }
+
+
+/*     section {
+        display: inline;
+        flex-direction: initial;
+    } */
+
+/*     h1 {
         font-size: 3.6rem;
         text-align: center;
         display: flex;
@@ -93,7 +137,7 @@ picture {
         text-align: left;
         margin: 0;
         margin-bottom: 10px;
-    }
+    } */
     
     .mobile {
         display: none;
