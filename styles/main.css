@@ -51,13 +51,6 @@ body {
 
 /* * quer dizer todos os elementos do meu html que está usando esse CSS */
 
-body, 
-input,
-button{
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-}
 
 .container {
     width: 90vw;

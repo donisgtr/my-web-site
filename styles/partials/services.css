@@ -1,0 +1,117 @@
+
+ /* Desktop */
+
+.services {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Montserrat;
+    display: initial;
+    
+}
+
+.container-about {
+    display: inline-block;
+    margin-top: 10rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+
+section div  {
+    display: block;
+    background: #232139 !important;
+    margin-left: 0;
+    border: 0px;
+    color: rgb(255, 255, 255) !important;
+}
+
+span {    
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Montserrat;
+    border: 0px;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* CSS FLEX BOX 1 */
+
+.flex {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 1rem;
+    max-height: 700px;
+
+}
+
+.flex > div {
+    flex: 1 1 100%;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    word-wrap: break-word; /* para o texto não sair da DIV */
+    width: 100%;
+    min-height: 5rem;
+    max-width: 900px;
+}
+
+button {
+    display: flex;
+}
+
+.span-flex {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    width: 300px;
+}
+
+
+.buttons-flex {
+    width: 100px;
+    height: 4.0rem;
+    background: rgb(255, 6, 87);
+    border-radius: .8rem;
+    margin-left: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Montserrat;
+    border: 0px;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    transition: all 0.2s ease-in 0s;
+    animation-duration: 4s;
+}
+
+.buttons-flex:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 11px;
+    background: #FF2D71;
+    cursor: pointer;
+    /* background-color:red; left:0px; top:0px; */
+    /* transform: background-color: #FF2D71 translateX(-8px); */
+}
+
+
+/* Mobile */
+@media (min-width: 900px) {
+    /* Flex box */
+}
+
+
