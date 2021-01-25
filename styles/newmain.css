@@ -1,0 +1,13 @@
+/* FIRST MOBILE */
+:root {
+    --new-color-background: linear-gradient(99.1deg, #232139 5.11%, #0D0C15 94.89%);
+    --h1-color-background: linear-gradient(99.1deg, rgb(35, 33, 57) 100%, rgb(13, 12, 21) 100%);
+    --h1-text-background: linear-gradient(90deg, rgb(64, 203, 246) 0%, rgb(130, 192, 65) 100%);
+    --primary-dark: #740629;
+}
+
+#title {
+    -webkit-background-clip: text !important;;
+    -webkit-text-fill-color: transparent !important; 
+}
+

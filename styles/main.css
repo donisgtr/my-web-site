@@ -1,7 +1,7 @@
 
 /* FIRST MOBILE */
 :root {
-    --p-color-background: linear-gradient(99.1deg, #232139 5.11%, #0D0C15 94.89%);
+    --p-color-background: linear-gradient(99.1deg, #232139 5.11%, #0D0C15 100%);
     --s-color-background: linear-gradient(99.1deg, rgb(35, 33, 57) 5.11%, rgb(13, 12, 21) 94.89%);
     --primary: #FF0657;
     --primary-light: #FF2D71;
@@ -72,6 +72,7 @@ h1 {
 
 }
 
+/* MENU */
 .nav-links li a {
     font-family: Manrope,sans-serif !important;
     font-weight: 600;

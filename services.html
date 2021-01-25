@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donis | Desenvolvedor</title>
 
-    
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="styles/partials/service.css"
-    />
+    <link type="text/css" rel="stylesheet" href="styles/newmain.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/hambuger.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/partials/service.css"/>
+
+
     <link
       rel="shortcut icon"
       href="imagens/favicon.png"
@@ -28,11 +27,17 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="services">
+  <body>
     <header>
-      <nav class="nav">
+<!--       <nav class="nav">
         <div class="brand-title"></div>
         <div class="hamburger" onclick="myFunction(this)">
           <div class="line1"></div>
@@ -47,13 +52,13 @@
           <li><a href="about.html">Sobre mim</a></li>
           <li><a href="about.html">Loja</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <main>
-      <div class="container-about">
-        <h1>O QUE EU POSSO FAZER POR VOCÊ?</h1>
-        <section class="flex">
-          <div>
+      <h1 id="title">O QUE EU POSSO FAZER POR VOCÊ?</h1>
+      <div class="container">
+        <section>
+          <div class="card">
             <h2>Crio Sites Profissionais e muito mais...</h2>
             <p>
               Seu negócio precisa de um site Profissional ou Institucional?
@@ -62,23 +67,21 @@
               ou atualizar o seu site atual. Um site moderno atraves do
               Copywriting, WebDesign, SEO.
             </p>
-            <span class="span-flex">
-              <p>Preço: R$: 987,00</p>
-              <a class="buttons-flex" href="contact.html">Contrate</a>
-            </span>
+            <span>Preço: R$: 987,00</span>
+            <a href="contact.html">Contrate</a>
           </div>
-          <div>
+
+          <div class="card">
             <h2>Desenvolvimento em OutSystems Low Code</h2>
             <p>
               Precisa de um Dev para seu projeto em Outystems com as melhores
               praticas do mercado? API's, querys, ou outra coisa?
             </p>
-            <span class="span-flex">
-              <p>Preço/Hora: R$20</p>
-              <a class="buttons-flex" href="contact.html">Contrate</a>
-            </span>
+            <span>Preço/Hora: R$20</span>
+            <a href="contact.html">Contrate</a>
           </div>
-          <div>
+
+          <div class="card why">
             <h2>Por que você deveria me contratar?</h2>
             <p>
               Suporte: Respostas o mais rápido possível, dando suporte 1 a 1 especializado,sempre relatando os progressos referentes ao dia anterior.
@@ -89,6 +92,9 @@
         </section>
       </div>
     </main>
+    <footer>
+      <span> Todos os direitos reservados </span>
+    </footer>
     <script src="scrips/navbar.js"></script>
   </body>
 </html>
