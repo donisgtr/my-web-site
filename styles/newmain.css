@@ -1,9 +1,12 @@
 /* FIRST MOBILE */
 :root {
-    --new-color-background: linear-gradient(99.1deg, #232139 5.11%, #0D0C15 94.89%);
+    --new-color-background: linear-gradient(99.1deg, #232139 100%, #0D0C15 100%);
+    --new-card-background: linear-gradient(99.1deg,  rgba(13, 12, 21, 0.308) 100%, rgba(35, 33, 57, 0.596) 100%);
     --h1-color-background: linear-gradient(99.1deg, rgb(35, 33, 57) 100%, rgb(13, 12, 21) 100%);
     --h1-text-background: linear-gradient(90deg, rgb(64, 203, 246) 0%, rgb(130, 192, 65) 100%);
-    --primary-dark: #740629;
+       --primary: #FF0657;
+    --primary-light: #FF2D71;
+    --primary-dark: #AD093E;
 }
 
 #title {

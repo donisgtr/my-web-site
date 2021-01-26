@@ -6,11 +6,7 @@
     <title>Donis | Desenvolvedor</title>
 
     <link type="text/css" rel="stylesheet" href="styles/main.css" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="styles/partials/form.css"
-    />
+    <link type="text/css" rel="stylesheet" href="styles/partials/form.css" />
     <link
       rel="shortcut icon"
       href="imagens/favicon.png"
@@ -31,51 +27,75 @@
   </head>
   <body class="page-contract">
     <header>
-        <nav class="nav">  
-            <div class="brand-title"></div>          
-            <div class="hamburger" onclick="myFunction(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div> 
-            <ul class="nav-links" >
-                <li id="inicio" > <a href="index.html">Inicio</a> </li>
-                <li> <a href="projects.html">Serviços</a> </li>
-                <li> <a href="projects.html">Portfólio</a> </li>
-                <li> <a href="contact.html">Contato</a> </li>
-                <li> <a href="about.html">Sobre mim</a> </li>
-                <li> <a href="about.html">Loja</a> </li>
-            </ul>            
-        </nav>
+      <nav class="nav">
+        <div class="brand-title"></div>
+        <div class="hamburger" onclick="myFunction(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li id="inicio"><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="projects.html">Portfólio</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="about.html">Sobre mim</a></li>
+          <li><a href="about.html">Loja</a></li>
+        </ul>
+      </nav>
     </header>
-    <main >
-      
+    <main>
       <form action="" method="post" id="create-form" class="form">
         <fieldset>
           <legend><!-- VAMOS TIRAR O SEU PROJETO DO PAPEL? --></legend>
 
           <div class="input-block">
-            <input type="text" name="first_name" id="first_name" placeholder="Primeiro Nome" value required>
-          </div>
-        
-          <div class="input-block">
-            <input type="email" name="email" id="email" placeholder="Seu E-mail" value required>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Primeiro Nome"
+              value
+              required
+            />
           </div>
 
           <div class="input-block">
-            <input type="number" name="phone" id="phone" placeholder="Seu Telefone(opcional)">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu E-mail"
+              value
+              required
+            />
+          </div>
+
+          <div class="input-block">
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Seu Telefone(opcional)"
+            />
           </div>
 
           <div class="textarea-block">
-            <textarea name="message" id="message" placeholder="Diga-me do que voce precisa?" value required></textarea>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Diga-me do que voce precisa?"
+              value
+              required
+            ></textarea>
           </div>
 
-          <button type="submit" id="create-form" > Enviar! </button>
+          <button type="submit" id="create-form">Enviar!</button>
         </fieldset>
       </form>
     </main>
 
-   <!--  <div>
+    <!--  <div>
       Colocar isso depois que o usuario enviar o form <br>
       💬 Você demora pra responder? <br> 
       Não. Confiro o e-mail várias vezes ao dia, com o intuito de não deixar ninguém sem resposta.

@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 
 body {
     font-family:'Poppins', sans-serif;
     background: var(--new-color-background);
     color: #fff;
+    
     /* o problema era que o background estava com (5.11%, rgb(13, 12, 21) 94.89%); */
 }
 
@@ -22,7 +24,8 @@ body {
 /* HEADER ==================== */
 
 #title /* O QUE POSSO FAZER POR VOCE? */{
-    padding: 5rem 0 1rem;
+    padding: 0 0 1rem;
+    margin-top: -1rem;
     text-align: center;
     font-weight: 700;
     font-size: 2.6rem; 
@@ -30,20 +33,78 @@ body {
 }
 
 /* Cards ==================== */
+
 .card {
-    background: var(--primary-dark);
-    padding: 1.5rem 2rem;
+    background: var(--new-card-background);
+    padding: 1rem 2rem;
     border-radius: 0.8rem;
     margin-bottom: 2rem;
+    text-align: center
 }
 
 .card.why {
     background:green;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;      
+}
+
+/* PREÇO E HORA ============= */
+.card p {
+    margin-bottom: 1rem;    
+}
+
+.card.why p {
+    margin-bottom: 0;   
+}
+
+.card .price {
+    border-radius: 0.8rem;
+    color: #fd951f;
+    font-weight: 700;
+}
+
+.card .contact-button {
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    background: rgb(255, 6, 87);
+    margin-left: 10px;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;    
+    transition: all 0.2s ease-in 0s;
+    animation-duration: 4s;
+}
+
+.card .contact-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 11px;
+    background: #FF2D71;
+    cursor: pointer;
 }
 
 /* FOOTER ==================== */
 
 footer {
     text-align: center;
+}
+
+/* RESPOSIVIDADE */
+
+@media (max-width: 768px) {
+    #title {
+        padding: 4rem 0 1rem;
+        font-size: 2rem; 
+    }
+
+    .card {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .card .contact-button {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1rem;
+        
+    }
 }
