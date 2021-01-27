@@ -24,7 +24,7 @@ body {
 /* HEADER ==================== */
 
 #title /* O QUE POSSO FAZER POR VOCE? */{
-    padding: 0 0 1rem;
+    padding: 2rem 0 1rem;
     margin-top: -1rem;
     text-align: center;
     font-weight: 700;
@@ -40,7 +40,7 @@ body {
     border-radius: 0.8rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .card.why {
@@ -88,6 +88,18 @@ body {
 
 footer {
     text-align: center;
+}
+
+/* AQUI VAI SER PARA QUANDO ESTIVER NO TABLET */
+
+@media (max-height: 700px) {
+    #title /* O QUE POSSO FAZER POR VOCE? */{
+        padding: .9rem 0 1rem;
+    }
+
+    .card {
+        font-size: .9rem;
+    }
 }
 
 /* RESPOSIVIDADE */
