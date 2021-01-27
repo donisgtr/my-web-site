@@ -28,7 +28,7 @@ body {
     margin-top: -1rem;
     text-align: center;
     font-weight: 700;
-    font-size: 2.6rem; 
+    font-size: 2rem; 
     background: var(--h1-text-background);
 }
 
@@ -38,8 +38,9 @@ body {
     background: var(--new-card-background);
     padding: 1rem 2rem;
     border-radius: 0.8rem;
-    margin-bottom: 2rem;
-    text-align: center
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .card.why {
@@ -49,7 +50,8 @@ body {
 
 /* PREÇO E HORA ============= */
 .card p {
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .card.why p {
@@ -60,6 +62,7 @@ body {
     border-radius: 0.8rem;
     color: #fd951f;
     font-weight: 700;
+    margin-right: 10px;
 }
 
 .card .contact-button {
@@ -69,7 +72,6 @@ body {
     font-size: 16px;
     text-decoration: none;
     background: rgb(255, 6, 87);
-    margin-left: 10px;
     color: rgb(255, 255, 255) !important;
     text-decoration: none !important;    
     transition: all 0.2s ease-in 0s;
@@ -97,14 +99,34 @@ footer {
     }
 
     .card {
-        font-size: 0.7rem;
-        text-align: center;
+        font-size: 0.8rem;       
     }
 
-    .card .contact-button {
+    .whyp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .card.why p {
+        margin-bottom: 0;  
+    }
+
+    .card .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .contact-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
         padding: 5px;
         border-radius: 5px;
         font-size: 1rem;
-        
+        width: 100%;
     }
 }
