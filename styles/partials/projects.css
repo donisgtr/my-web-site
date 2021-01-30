@@ -14,74 +14,8 @@ body {
     /* o problema era que o background estava com (5.11%, rgb(13, 12, 21) 94.89%); */
 }
 
-.container {
-    width: min(90vw, 1000px); /* qual e menor entre os dois e vai deixar um deles. */
-    margin: auto;
-    word-wrap: break-word;
-}
-
-/*  @media (min-width: 800px) {
-    section {
-        display: grid;
-        grid-template-columns: 400px 400px 400px;
-        gap: 2rem;
-        height: 100%;
-    }
-
-    .container {
-        width: min(90vw, 800px); 
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
- } */
-
-/* HEADER ==================== */
-
-#title /* O QUE POSSO FAZER POR VOCE? */{
-    padding: 2rem 0 1rem;
-    margin-top: -1rem;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem; 
-    background: var(--h1-text-background);
-}
-
-/* Cards ==================== */
-
-.card {
-    background: var(--new-card-background);
-    padding: 1rem 2rem;
-    border-radius: 0.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.card.why {
-    background:green;
-    margin-bottom: 0.5rem;      
-}
-
-/* PREÇO E HORA ============= */
-.card p {
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-.card.why p {
-    margin-bottom: 0;   
-}
-
-.card .price {
-    border-radius: 0.8rem;
-    color: #fd951f;
-    font-weight: 700;
-    margin-right: 10px;
-}
-
-.card .contact-button {
+/* button ==================== */
+.card .card-button {
     color: #fff;
     padding: 8px;
     border-radius: 5px;
@@ -94,29 +28,61 @@ body {
     animation-duration: 4s;
 }
 
-.card .contact-button:hover {
+.card .card-button:hover {
     box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 11px;
     background: #FF2D71;
     cursor: pointer;
 }
 
 /* FOOTER ==================== */
-
 footer {
     text-align: center;
 }
 
-/* AQUI VAI SER PARA QUANDO ESTIVER NO TABLET */
+/* DESKTOP */
+@media (min-width: 800px) {
 
-@media (max-height: 700px) {
+    /* HEADER ==================== */
     #title /* O QUE POSSO FAZER POR VOCE? */{
-        padding: .9rem 0 1rem;
+        padding: 2rem 0 1rem;
+        margin-top: -1rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem; 
+        background: var(--h1-text-background);
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .container {
+        width: min(90vw, 1000px); /* qual e menor entre os dois e vai deixar um deles. */;
+        margin: auto;
     }
 
     .card {
-        font-size: .9rem;
+        background: var(--new-card-background);
+        padding: 1rem 2rem;
+        border-radius: 0.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 1rem;
     }
-}
+
+    .card p {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+ } 
+
+
+/* AQUI VAI SER PARA QUANDO ESTIVER NO TABLET */
+
+
 
 /* RESPOSIVIDADE */
 
@@ -147,7 +113,7 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .contact-button {
+    .card-button {
         display: flex;
         justify-content: center;
         align-items: center;
