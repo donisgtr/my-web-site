@@ -40,12 +40,17 @@ body {
 /* HEADER ==================== */
 
 #title /* O QUE POSSO FAZER POR VOCE? */{
-    padding: 2rem 0 1rem;
+    padding: 0 0 1rem;
     margin-top: -1rem;
     text-align: center;
     font-weight: 700;
     font-size: 2rem; 
     background: var(--h1-text-background);
+}
+
+h2 {
+    margin-bottom: 10px;
+    line-height: 26px;
 }
 
 /* Cards ==================== */
@@ -56,7 +61,7 @@ body {
     border-radius: 0.8rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .card.why {
@@ -68,6 +73,7 @@ body {
 .card p {
     margin-bottom: 1rem;
     width: 100%;
+    font-weight: 400 !important;
 }
 
 .card.why p {
@@ -92,6 +98,9 @@ body {
     text-decoration: none !important;    
     transition: all 0.2s ease-in 0s;
     animation-duration: 4s;
+    margin: 1rem 0 ;
+
+    
 }
 
 .card .contact-button:hover {
@@ -126,8 +135,15 @@ footer {
         font-size: 2rem; 
     }
 
+    h2 {
+        margin-bottom: 10px;
+        line-height: 24px;
+    }
+
     .card {
-        font-size: 0.8rem;       
+        font-size: 0.8rem;
+        text-align: left;  
+        line-height: 20px; 
     }
 
     .whyp {
@@ -138,6 +154,7 @@ footer {
 
     .card.why p {
         margin-bottom: 0;  
+        
     }
 
     .card .price {
