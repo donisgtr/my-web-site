@@ -20,10 +20,7 @@ body {
     word-wrap: break-word;
 }
 
-
-
-
-
+/* DESKTOP */
 @media (min-width: 800px) {
   
     #balance {
@@ -31,10 +28,6 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-     #balance .why {
-        grid-row: 3 / 4 ;
-        grid-columns: 100%;
-    } 
 
     .contact-button {
         display: flex;
