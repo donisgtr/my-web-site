@@ -46,10 +46,9 @@ body {
 
 #title /* O QUE POSSO FAZER POR VOCE? */{
     padding: 0 0 1rem;
-    margin-top: -1rem;
     text-align: center;
     font-weight: 700;
-    font-size: 2rem; 
+    font-size: 1.6rem; 
     background: var(--h1-text-background);
 }
 
@@ -66,7 +65,7 @@ h2 {
     border-radius: 0.8rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .card.why {
@@ -82,7 +81,8 @@ h2 {
 }
 
 .card.why p {
-    margin-bottom: 0;   
+    margin-bottom: 0; 
+    padding: 0 1rem 0 1rem;  
 }
 
 .card .price {
