@@ -1,4 +1,3 @@
-
 const form = document.querySelector('#create-form');
 
 console.log(form);

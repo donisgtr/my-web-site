@@ -57,6 +57,12 @@ h2 {
     line-height: 26px;
 }
 
+.low-code {
+    color: #FF2D71;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
 /* Cards ==================== */
 
 .card {
@@ -143,7 +149,7 @@ footer {
         line-height: 24px;
     }
 
-    .card {
+    .card p {
         font-size: 0.8rem;
         text-align: left;  
         line-height: 20px; 
@@ -156,9 +162,16 @@ footer {
     } 
 
     .card.why p {
-        margin-bottom: 0;  
+        margin-bottom: 0; 
+        padding: 0; 
         
     }
+
+    .card.why h2 {
+        text-align: left;
+    }
+
+    
 
     .card .price {
         display: flex;

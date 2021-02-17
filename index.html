@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+
 </head>
 
 <body class="page-landing">
@@ -29,9 +32,9 @@
                 <li id="inicio"> <a href="index.html">Inicio</a> </li>
                 <li> <a href="services.html">Serviços</a> </li>
                 <li> <a href="projects.html">Portfólio</a> </li>
-                <li> <a href="contact.html">Contato</a> </li>
+<!--                 <li> <a href="contact.html">Contato</a> </li> -->
                 <li> <a href="about.html">Sobre mim</a> </li>
-                <li> <a href="about.html">Loja</a> </li>
+<!--                 <li> <a href="about.html">Loja</a> </li> -->
             </ul>
         </nav>
         <!-- <hr> -->
@@ -61,13 +64,11 @@
             </h1>
             <p class="softs">WEB | OUTSYSTEMS | API's</p>
             <div class="buttons-container">
-                <a class="contrate-me" href="contact.html">
-                    CONTRATE-ME
-                </a>
+                <a class="contrate-me" href="" onclick="Calendly.initPopupWidget({url: 'https:calendly.com/devdonis/agenda-uma-reuniao?hide_gdpr_banner=1'});return false;">AGENDAR</a> 
             </div>
         </div>
         <div class="whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5511960688434&text=Olá, Quero conversar!" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=5511960688434&text=Olá, e do Web Site!" target="_blank">
                 <img src="imagens/whatsapp.svg" alt="whatsapp">
             </a>
         </div>
@@ -79,6 +80,7 @@
     </footer>
 
     <script src="scrips/navbar.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </body>
 
 </html>
