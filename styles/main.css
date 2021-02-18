@@ -81,13 +81,14 @@ h1 {
 
 
 span {
+    font-family: Manrope,sans-serif !important;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1px;
-    font-size: 1.0rem;
+    font-size: 10px;
 }
 
 footer {

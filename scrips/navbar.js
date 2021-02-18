@@ -15,8 +15,3 @@ hamburger.addEventListener('click', () => {
 function myFunction(x) {
     x.classList.toggle("change");
 }
-/* 
-function calendly() {
-    Calendly.initPopupWidget({url: 'https:calendly.com/devdonis/agenda-uma-reuniao'});return false;
-}
- */

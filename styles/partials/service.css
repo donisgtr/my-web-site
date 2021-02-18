@@ -121,7 +121,14 @@ h2 {
 /* FOOTER ==================== */
 
 footer {
-    text-align: center;
+    font-family: Manrope,sans-serif !important;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 10px;
 }
 
 /* AQUI VAI SER PARA QUANDO ESTIVER NO TABLET */

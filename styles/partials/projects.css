@@ -89,8 +89,14 @@ section {
 
 /* FOOTER ==================== */
 footer {
-    margin-top: 8rem;
-    text-align: center;
+    font-family: Manrope,sans-serif !important;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 10px;
 }
 
 /* DESKTOP */
