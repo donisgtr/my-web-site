@@ -87,6 +87,10 @@ section {
     cursor: pointer;
 }
 
+.airdots3 {
+    background: #FFF;
+}
+
 /* FOOTER ==================== */
 footer {
     font-family: Manrope,sans-serif !important;
