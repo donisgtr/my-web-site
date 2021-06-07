@@ -86,6 +86,11 @@ section {
     background: #FF2D71;
     cursor: pointer;
 }
+/*airdots3*/
+
+.airdots3 {
+    background: #FFF;
+}
 
 /* FOOTER ==================== */
 footer {
