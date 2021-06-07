@@ -92,6 +92,10 @@ section {
     background: #FFF;
 }
 
+.airdots3 {
+    background: #FFF;
+}
+
 /* FOOTER ==================== */
 footer {
     font-family: Manrope,sans-serif !important;
@@ -136,6 +140,11 @@ footer {
     
  } 
 
+ .star-wars img { 
+     max-width: 100px;
+     max-height: 50px;
+ }
+     
 
 /* AQUI VAI SER PARA QUANDO ESTIVER NO TABLET */
 
